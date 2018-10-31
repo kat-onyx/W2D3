@@ -2,11 +2,11 @@ require 'rspec'
 require 'card'
 
 RSpec.describe Card do
-  subject(:card) { Card.new(:King, :diamond, :red)}
+  subject(:card) { Card.new(13, :diamond, :red)}
 
   describe "#initialize" do
     it "should have a value" do
-      expect(card.value).to eq(:King)
+      expect(card.value).to eq(13)
     end
 
     it "should have a suit" do
