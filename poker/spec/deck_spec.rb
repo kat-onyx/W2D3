@@ -25,4 +25,16 @@ RSpec.describe Deck do
       expect(value.count).to eq(4)
     end
   end
+
+  describe "#deal_card" do
+    it "deals a card from the top" do
+      test_deck.deal_card
+      expect(test_deck.deck.length).to eq(51)
+    end
+
+    it "returns the top card" do
+      card = test_deck.deck.first
+      expect(test_deck.deal_card).to be(card)
+    end
+  end
 end

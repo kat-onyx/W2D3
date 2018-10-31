@@ -29,4 +29,9 @@ class Deck
 
     @deck.shuffle!
   end
+
+  def deal_card
+    @deck.shift
+  end
+
 end
