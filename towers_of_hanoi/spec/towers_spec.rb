@@ -41,5 +41,11 @@ RSpec.describe TowersOfHanoi do
     end
   end
 
-  
+  describe "#render" do
+    it "displays the board to the user" do
+      expect(tower.render).to be_a(String)
+    end
+  end
+
+
 end

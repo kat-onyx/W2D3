@@ -31,5 +31,6 @@ class TowersOfHanoi
   end
 
   def render
+    p "#{@board}"
   end
 end
