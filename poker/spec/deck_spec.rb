@@ -5,7 +5,7 @@ require 'deck'
 RSpec.describe Deck do
   subject(:test_deck) { Deck.new }
 
-  describe "#generate_deck" do
+  describe "::generate_deck" do
     it "generates a 52 card deck" do
       expect(test_deck.deck.length).to eq(52)
     end
