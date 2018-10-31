@@ -37,8 +37,9 @@ RSpec.describe TowersOfHanoi do
     end
 
     it "raises an error if tower does not exist" do
-      expect{tower.valid_move?(0,5)}.to raise_error(ArgumentError)
+      expect(tower.valid_move?(0,5)).to eq(false)
     end
   end
 
+  
 end
