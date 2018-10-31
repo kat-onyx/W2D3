@@ -5,3 +5,15 @@ body {
 h1 {
     font-size: 38px;
 }
+
+h2 {
+    font-size: 32px;
+}
+
+ul.ingredients-list {
+    list-style: square inside;
+}
+
+ol.direction-list {
+    list-style: ethiopic-halehame;
+}
